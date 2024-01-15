@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Background Image Example</title>
+    <style>
+      body {
+        /* Set the background image using a URL */
+        background-image: url("https://images.unsplash.com/photo-1498408040764-ab6eb772a145?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3JvcCUyMGZpZWxkfGVufDB8fDB8fHww");
+        /* Set background properties like size, position, and repeat */
+        background-size: cover; /* Adjust the size to cover the whole background */
+        /* Position the image at the center */
+        background-repeat: no-repeat; /* Prevent image repetition */
+      }
+      button {
+        font-size: 18px;
+        border: 2px solid gray;
+        border-radius: 6px;
+        cursor: pointer;
+        background: rgb(224, 247, 167);
+        display: inline-grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 48px;
+        grid-gap: 14px;
+        place-items: center;
+        margin-left: 50px;
+      }
+      .button2:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      }
+      button {
+        font-size: 40px;
+      }
+    </style>
+    <script>
+      function goToNewPage() {
+        window.location.href = "http://localhost:8501";
+      }
+      function goToNewPage1() {
+        window.location.href = "http://localhost:8502";
+      }
+      function goToNewPage2() {
+        window.location.href = "http://localhost:8503";
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+      <h3
+        style="
+          color: brown;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+            'Lucida Sans', Arial, sans-serif;
+          padding-top: 10px;
+        "
+      >
+        If the rain spoils our picnic, but saves a farmers crop, who are we to
+        say it shouldnt rain?
+      </h3>
+      <h1
+        style="
+          color: black;
+          padding-bottom: 40px;
+          padding-top: 10px;
+          font-size: 90px;
+        "
+      >
+        Crop management and Risk assistance
+      </h1>
+    </center>
+    <!--<p style="padding-bottom: 40px; padding-left: 20px">
+      the farmer should know if he grows a particular crop it should be
+      profitable .It should not lead the farmer to some sort of loss or any
+      other issue
+    </p>-->
+    <center>
+      <div>
+        <button class="button2" onclick="goToNewPage()">
+          Crop recommendation
+        </button>
+        <button class="button2" onclick="goToNewPage1()">
+          Yield prediction
+        </button>
+      </div>
+      <div><br /></div>
+      <div><br /></div>
+      <div>
+        <h2 style="color: rgb(252, 240, 10)">I have a new crop to suggest!!</h2>
+        <button class="button2" onclick="goToNewPage2()">Add new Crop</button>
+      </div>
+    </center>
+  </body>
+</html>
